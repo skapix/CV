@@ -1,0 +1,113 @@
+\documentclass[11pt,a4paper]{moderncv}
+
+\moderncvtheme[orange]{classic}
+
+\usepackage [T2A] {fontenc}   % Кириллица в PDF файле
+\usepackage [utf8] {inputenc} % Кодировка текста: utf-8
+\usepackage [russian,english] {babel} % Переносы, лигатуры
+
+\renewcommand{\rmdefault}{cmr} % Шрифт с засечками
+\renewcommand{\sfdefault}{cmss} % Шрифт без засечек
+\renewcommand{\ttdefault}{cmtt} % Моноширинный шрифт
+
+
+% for easy english-russian switch
+\newcommand{\EngRus}[2]{#1}
+%\newcommand{\EngRus}[2]{#2}
+
+\newcommand{\BirthPlaceOfValour}{\EngRus{Rostov-on-Don, Russia}{Ростов-на-Дону, Россия}}
+
+\usepackage[unicode]{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
+
+\firstname{\EngRus{Ilya}{Илья}}
+\familyname{\EngRus{Skapenko}{Скапенко}}
+\address{}{\BirthPlaceOfValour}
+\mobile{+7 919 881-82-87}
+\email{iliasr@mail.ru}
+\extrainfo{\EngRus{Year of birth}{Год рождения}: 1993}
+
+\begin{document}
+\maketitle
+
+\section{\EngRus{Skills}{Навыки}}
+  \subsection{\EngRus{Professional}{Профессиональные}}
+    \cvline
+    {\EngRus{C++ Programmer}{Программист C++}}
+      {
+      \EngRus{Language}{Языки}: C++, Python, assembler (x86, x86-64).\newline{}
+      \EngRus{Frameworks/Libraries}{Фреймворки/Библиотеки}: Boost, Qt, Opencv, GTest, STL, WinApi, CUDA.\newline{}
+      \EngRus{Build automation}{Системы автоматизации сборки}: CMake, make.\newline{}
+      \EngRus{VCS}{Системы управления версиями}: Git, SVN.\newline{}
+      IDE: MS VS 2017, CLion, Qt Creator, Eclipse (Nsight, CDT).
+      }
+  \subsection{\EngRus{Languages}{Языки}}
+    \cvline
+    {\EngRus{English}{Английский}}
+      {
+      \EngRus{Level}{Уровень} --- \EngRus{upper intermediate}{разговорный} (B2). \newline{}
+      }
+
+\section{\EngRus{Experience}{Опыт}}
+\cventry
+  {\EngRus{June}{Июнь} 2016--\EngRus{February}{Февраль} 2017}
+  {\bfseries \EngRus{C++ programmer}{C++ программист}}
+  {Esignal, \BirthPlaceOfValour}
+  {\newline{}\url{http://www.esignal.com}}{}
+  {\EngRus{Maintaining of existing applications: refactoring, implementing new features, fixing bugs.}{Поддержка текущего кода: рефакторинг, исправление багов и добавление новых возможностей.}}
+\cventry
+  {\EngRus{February}{Февраль} 2017--н.в}
+  {\EngRus{Embedded programmer}{Программист микроконтроллеров}}
+  {\EngRus{ISOSCAN LTD}{ООО "Изоскан"}, \BirthPlaceOfValour}
+  {\newline{}\url{http://r-call.ru/}}{}
+  {\EngRus{Software developing. Operation system configurating, creating build automation, code maintaining.}{Разработка программного обеспечения. Настройка операционных систем, систем сборки, поддержка текущего кода.}}
+
+\pagebreak
+
+\section{\EngRus{Education}{Образование}}
+  \subsection{\EngRus{University}{Университет}}
+    \cventry
+      {2011--2015 г.}
+      {\EngRus{Bachelor. Southern Federal University}{Бакалавриат. Южный Федеральный Университет}}
+      {\BirthPlaceOfValour}
+      {\EngRus{Faculty of Mathematics, Mechanics and Computer Science}
+      {Институт математики, механики и компьютерных наук им. И.И. Воровича}}
+      {\EngRus{Applied Mathematics and Informatics}{Прикладная математика и информатика}}
+      {}
+    \cventry
+      {2015--2017 г.}
+      {\EngRus{Master. Southern Federal University}{Магистратура. Южный Федеральный Университет}}
+      {\BirthPlaceOfValour}
+      {\EngRus{Faculty of Mathematics, Mechanics and Computer Science}
+      {Институт математики, механики и компьютерных наук им. И.И. Воровича}}
+      {\EngRus{Fundamental Informatics and IT}{Фундаментальная информатика и информационные технологии}}
+      {}
+  \subsection{\EngRus{MOOCs}{Онлайн курсы}}
+    \cventry
+      {\EngRus{April}{Апрель} 2013--\EngRus{June}{Июнь} 2013}
+      {The Hardware/Software Interface}
+      {\newline\url{https://www.coursera.org/course/hwswinterface}}
+      {}{}{}
+    \cventry
+      {\EngRus{June}{Июнь} 2013--\EngRus{September}{Сентябрь} 2013}
+      {Computer Networks}
+      {\newline\url{https://www.coursera.org/course/comnetworks}}
+      {}{}{}
+    \cventry
+      {\EngRus{September}{Сентябрь} 2013--\EngRus{November}{Ноябрь} 2013}
+      {Quantum Mechanics for Scientists and Engineers}
+      {\newline\url{https://lagunita.stanford.edu/courses/Engineering/QMSE01/Quantum_Mechanics_for_Scientists_and_Engineers/info}}
+      {}{}{}
+
+\section{\EngRus{Public Activity}{Публичная деятельность}}
+  \subsection{\EngRus{Speaking}{Конференции}}
+    \cventry
+      {\EngRus{April}{Апрель}, 2017}
+      {\EngRus{LLVM. Code compaction}{Преобразование по уплотнению кода в LLVM}}
+      {\EngRus{PLC-2017}{Языки программирования и компиляторы 2017}}
+      {\BirthPlaceOfValour, \EngRus{Southern Federal University}{Южный Федеральный Университет}}
+      {\newline\url{https://elibrary.ru/item.asp?id=29098144} \EngRus{[rus]}{}}
+      {}{}
+
+\end{document}
