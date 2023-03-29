@@ -26,7 +26,7 @@
 \newcommand{\SunshinePalace}{\EngRus{Barcelona, Spain}{Барселона, Испания}}
 \newcommand{\UsedStack}{\textbf{\EngRus{Used stack}{Используемый Стек}}: }
 \newcommand{\WorkExperience}{\newline{} \textbf{\EngRus{Responsibilities}{}}: }
-\newcommand{\WorkSingleDate}[2]{\small{#1.#2}}
+\newcommand{\WorkSingleDate}[2]{\small{\EngRus{#2.#1}{#1.#2}}}
 \newcommand{\WorkDate}[4]{\small{\EngRus{#2.#1 -- #4.#3}{#1.#2 -- #3.#4}}}
 
 \newcommand{\SkillValue}[1]{
@@ -54,146 +54,151 @@
 \maketitle
 \section{\EngRus{Experience}{Опыт}}
 \cventry
-  {\WorkSingleDate{04}{2022} -- \EngRus{Present}{н.в.}}
-  {\bfseries \EngRus{Software developer}{Разработчик ПО}}
-  {TradingView \url{www.tradingview.com}}{}{}
-  {
-    \EngRus{Golang + kubernetes}
-    {Golang + kubernetes}
-  }
+{\WorkSingleDate{04}{2022} -- \EngRus{Present}{н.в.}}
+{\bfseries \EngRus{Software developer}{Разработчик ПО}}
+{TradingView \url{www.tradingview.com}}{}{}
+{
+  \EngRus{Go, design and implementation of kubernetes operators, feature lead}
+  {Go, проектирование и разработка операторов kubernetes, feature lead}
+}
 
 \cventry
-  {\WorkDate{02}{2018}{03}{2022}}
-  {\bfseries \EngRus{Software developer}{Разработчик ПО}}
-  {SecurityScorecard \url{securityscorecard.com}}{}{}
-  {
-    \EngRus{Was responsible for implementing and maintaining Big Data processing pipeline, that handled hundreds of terrabytes daily.}
-    {Разрабатывал и поддерживал пайплайн для больших данных, который обрабатывал сотни террабайт в день.}
-    \newline{}\textbf{\EngRus{Key achievements}{Ключевые достижения}:}
-    \begin{itemize}
-      \item \EngRus{Multiple global and local pipeline performance improvements}{Множественные глобальные и локальные улучшения производительности пайплайна}
-      \item \EngRus{Developed way to index custom file format for faster querying}{Реализовал индексацию файлов для быстрого поиска интересующих событий}
-      \item \EngRus{Made file format language-agnostic. Added support for Python and Scala. Integrated with Apache Spark}
-                   {Упростил формат файла, добавил поддержку Python и Scala. Интегрировал формат с Apache Spark}
-    \end{itemize}
-    \UsedStack{} C++14/17, protobuf, bash, sqlite, scala, apache spark, python, aws s3, kafka
-  }
+{\WorkDate{02}{2018}{03}{2022}}
+{\bfseries \EngRus{Software developer}{Разработчик ПО}}
+{SecurityScorecard \url{securityscorecard.com}}{}{}
+{
+  \EngRus{Was responsible for implementing and maintaining Big Data processing pipeline, that handled hundreds of terrabytes daily.}
+  {Разрабатывал и поддерживал пайплайн для больших данных, который обрабатывал сотни террабайт в день.}
+  \newline{}\textbf{\EngRus{Key achievements}{Ключевые достижения}:}
+  \begin{itemize}
+    \item \EngRus{Multiple global and local pipeline performance improvements}{Множественные глобальные и локальные улучшения производительности пайплайна}
+    \item \EngRus{Developed way to index custom file format for faster querying}{Реализовал индексацию файлов для быстрого поиска интересующих событий}
+    \item \EngRus{Made file format language-agnostic. Added support for Python and Scala. Integrated with Apache Spark}
+          {Упростил формат файла, добавил поддержку Python и Scala. Интегрировал формат с Apache Spark}
+  \end{itemize}
+  \UsedStack{} C++14/17, protobuf, bash, sqlite, scala, apache spark, python, aws s3, kafka
+}
 
 \cventry
-  {\WorkDate{03}{2020}{11}{2020}}
-  {\bfseries \EngRus{Software developer}{Разработчик ПО}}
-  {Inspera \url{www.inspera.com}}{}{}
-  {
-    \EngRus{Implemented event-based audio, video and screen sharing processing in remote proctoring application.}
-    {Реализовывал событийную обработку аудио, видео в приложении удалённого тестирования.}
-    \newline{}\UsedStack{} C++14, webm, opus
-  }
+{\WorkDate{03}{2020}{11}{2020}}
+{\bfseries \EngRus{Software developer}{Разработчик ПО}}
+{Inspera \url{www.inspera.com}}{}{}
+{
+  \EngRus{Implemented event-based audio, video and screen sharing processing in remote proctoring application.}
+  {Реализовывал событийную обработку аудио, видео в приложении удалённого тестирования.}
+  \newline{}\UsedStack{} C++14, webm, opus
+}
 
 \cventry
-  {\WorkDate{02}{2019}{03}{2020}}
-  {\bfseries \EngRus{Robotics intern}{Стажёр робототехники}}
-  {Remy Robotics \url{www.remyrobotics.com}} { \SunshinePalace }{}
-  {\EngRus{During my internship had introduction with ROS ecosystem, tried to solve pickup problem with Reinforcement Learning and controlled UR5 robot.}
+{\WorkDate{02}{2019}{03}{2020}}
+{\bfseries \EngRus{Robotics intern}{Стажёр робототехники}}
+{Remy Robotics \url{www.remyrobotics.com}} { \SunshinePalace }{}
+{\EngRus{During my internship had introduction with ROS ecosystem, tried to solve pickup problem with Reinforcement Learning and controlled UR5 robot.}
   {Во время стажировки познакомился с экосистемой ROS, использовал обучение с подкреплением для решения задачи захвата объектов и управлял роботом UR5.}
-    \newline{}\UsedStack{} ROS, Gazebo, Python, C++, \EngRus{Reinforcement Learning}{Обучение с подкреплением}, UR5}
+  \newline{}\UsedStack{} ROS, Gazebo, Python, C++, \EngRus{Reinforcement Learning}{Обучение с подкреплением}, UR5}
 
 \cventry
-  {\WorkDate{02}{2017}{02}{2018}}
-  {\EngRus{Embedded developer}{Разработчик встраиваемого ПО}}
-  {\EngRus{ISOSCAN LTD}{ООО "Изоскан"} \url{r-call.ru}}
-  {\BirthPlaceOfValour}{}
-  {\EngRus{Was involved in bug fixing, Operation system configurating, creating build automation, code maintaining.}
-          {Был задействован в исправлении багов, настройки операционных систем, систем сборки, поддержки текущего кода.}
+{\WorkDate{02}{2017}{02}{2018}}
+{\EngRus{Embedded developer}{Разработчик встраиваемого ПО}}
+{\EngRus{ISOSCAN LTD}{ООО "Изоскан"} \url{r-call.ru}}
+{\BirthPlaceOfValour}{}
+{\EngRus{Was involved in bug fixing, Operation system configurating, creating build automation, code maintaining.}
+  {Был задействован в исправлении багов, настройки операционных систем, систем сборки, поддержки текущего кода.}
   \newline{}\textbf{\EngRus{Key achievement}{Ключевое достижение}:}
-    \begin{itemize}
-      \item \EngRus{Rewrote almost from scratch queue management system}{Полностью переписал систему электронной очереди}
-    \end{itemize}
-    \UsedStack{} C++, RTOS, Qt, Python, Arch Linux
-  }
+  \begin{itemize}
+    \item \EngRus{Rewrote almost from scratch queue management system}{Полностью переписал систему электронной очереди}
+  \end{itemize}
+  \UsedStack{} C++, RTOS, Qt, Python, Arch Linux
+}
 
 \cventry
-  {\WorkDate{06}{2016}{02}{2017}}
-  {\bfseries \EngRus{C++ programmer}{C++ программист}}
-  {Esignal, \url{www.esignal.com} \BirthPlaceOfValour}
-  {}{}
-  {\EngRus{Maintaining of existing applications: refactoring, implementing new features, fixing bugs.}{Поддержка текущего кода: рефакторинг, исправление багов и добавление новых возможностей.}
+{\WorkDate{06}{2016}{02}{2017}}
+{\bfseries \EngRus{C++ programmer}{C++ программист}}
+{Esignal, \url{www.esignal.com} \BirthPlaceOfValour}
+{}{}
+{\EngRus{Maintaining of existing applications: refactoring, implementing new features, fixing bugs.}{Поддержка текущего кода: рефакторинг, исправление багов и добавление новых возможностей.}
   \newline{}\UsedStack{} C++, boost}
 
 \section{\EngRus{Skills}{Навыки}}
-  \subsection{\EngRus{Professional}{Профессиональные}}
-    \cvline
-    {}
-      {
-        \begin{tabular}{ l c l c}
-          C++ & \SkillValue{3} & Python & \SkillValue{2} \\
-          Go & \SkillValue{2} & Assembler (x86) & \SkillValue{1} \\
-          Scala & \SkillValue{1} & & \\
-        \end{tabular}
-      }
-  \subsection{\EngRus{Languages}{Языки}}
-    \cvline{}
-    {
-      \begin{tabular}{ l l}
-        \EngRus{English}{Английский}: & \EngRus{Upper intermediate}{Разговорный} (B2) \\
-        \EngRus{Russian}{Русский}: & \EngRus{Native}{Родной} \\
-      \end{tabular}
-    }
+\subsection{\EngRus{Professional}{Профессиональные}}
+\cvline
+{}
+{
+  \begin{tabular}{ l c l c}
+    Go    & \SkillValue{3} & Python          & \SkillValue{2} \\
+    C++   & \SkillValue{3} & Assembler (x86) & \SkillValue{1} \\
+    Scala & \SkillValue{1} &                 &                \\
+  \end{tabular}
+}
+\subsection{\EngRus{Languages}{Языки}}
+\cvline{}
+{
+  \begin{tabular}{ l l}
+    \EngRus{English}{Английский}: & \EngRus{Upper intermediate}{Разговорный} (B2) \\
+    \EngRus{Russian}{Русский}:    & \EngRus{Native}{Родной}                       \\
+  \end{tabular}
+}
 \pagebreak
 
 \section{\EngRus{Education}{Образование}}
-  \subsection{\EngRus{University}{Университет}}
-    \cventry
-      {\WorkDate{02}{2019}{03}{2020}}
-      {\EngRus{Harbour.Space}{Harbour.Space}}
-      {\SunshinePalace}
-      {}
-      {\EngRus{Robotics}{Робототехника}}
-      {}
-    \cventry
-      {\WorkDate{09}{2015}{08}{2017}}
-      {\EngRus{Master. Southern Federal University}{Магистратура. Южный Федеральный Университет}}
-      {\BirthPlaceOfValour}
-      {\EngRus{Faculty of Mathematics, Mechanics and Computer Science}
-      {Институт математики, механики и компьютерных наук им. И.И. Воровича}}
-      {\EngRus{Fundamental Informatics and IT}{Фундаментальная информатика и информационные технологии}}
-      {}
-    \cventry
-      {\WorkDate{09}{2011}{08}{2015}}
-      {\EngRus{Bachelor. Southern Federal University}{Бакалавриат. Южный Федеральный Университет}}
-      {\BirthPlaceOfValour}
-      {\EngRus{Faculty of Mathematics, Mechanics and Computer Science}
-      {Институт математики, механики и компьютерных наук им. И.И. Воровича}}
-      {\EngRus{Applied Mathematics and Informatics}{Прикладная математика и информатика}}
-      {}
-  \subsection{\EngRus{MOOCs}{Онлайн курсы}}
-    \cventry
-      {\WorkDate{07}{2016}{09}{2016}}
-      {Embedded Systems -- Shape the World}
-      {\newline\url{https://courses.edx.org/courses/course-v1:UTAustinX+UT.6.03x+1T2016}}
-      {}{}{}
-    \cventry
-      {\WorkDate{09}{2013}{11}{2013}}
-      {Quantum Mechanics for Scientists and Engineers}
-      {\newline\url{https://lagunita.stanford.edu/courses/Engineering/QMSE01/Quantum_Mechanics_for_Scientists_and_Engineers/info}}
-      {}{}{}
-    \cventry
-      {\WorkDate{06}{2013}{09}{2013}}
-      {Computer Networks}
-      {\newline\url{https://www.coursera.org/course/comnetworks}}
-      {}{}{}
-    \cventry
-      {\WorkDate{04}{2013}{06}{2013}}
-      {The Hardware/Software Interface}
-      {\newline\url{https://www.coursera.org/course/hwswinterface}}
-      {}{}{}
+\subsection{\EngRus{University}{Университет}}
+\cventry
+{\WorkDate{02}{2019}{03}{2020}}
+{\EngRus{Harbour.Space}{Harbour.Space}}
+{\SunshinePalace}
+{}
+{\EngRus{Robotics}{Робототехника}}
+{}
+\cventry
+{\WorkDate{09}{2015}{08}{2017}}
+{\EngRus{Master. Southern Federal University}{Магистратура. Южный Федеральный Университет}}
+{\BirthPlaceOfValour}
+{\EngRus{Faculty of Mathematics, Mechanics and Computer Science}
+  {Институт математики, механики и компьютерных наук им. И.И. Воровича}}
+{\EngRus{Fundamental Informatics and IT}{Фундаментальная информатика и информационные технологии}}
+{}
+\cventry
+{\WorkDate{09}{2011}{08}{2015}}
+{\EngRus{Bachelor. Southern Federal University}{Бакалавриат. Южный Федеральный Университет}}
+{\BirthPlaceOfValour}
+{\EngRus{Faculty of Mathematics, Mechanics and Computer Science}
+  {Институт математики, механики и компьютерных наук им. И.И. Воровича}}
+{\EngRus{Applied Mathematics and Informatics}{Прикладная математика и информатика}}
+{}
+\subsection{\EngRus{MOOCs}{Онлайн курсы}}
+\cventry
+{\WorkDate{10}{2022}{03}{2023}}
+{\EngRus{Software Architect}{Архитектор программного обеспечения}}
+{\newline\url{https://skillbox.ru/course/software-architect}}
+{}{}{}
+\cventry
+{\WorkDate{07}{2016}{09}{2016}}
+{Embedded Systems -- Shape the World}
+{\newline\url{https://courses.edx.org/courses/course-v1:UTAustinX+UT.6.03x+1T2016}}
+{}{}{}
+\cventry
+{\WorkDate{09}{2013}{11}{2013}}
+{Quantum Mechanics for Scientists and Engineers}
+{\newline\url{https://lagunita.stanford.edu/courses/Engineering/QMSE01/Quantum_Mechanics_for_Scientists_and_Engineers/info}}
+{}{}{}
+\cventry
+{\WorkDate{06}{2013}{09}{2013}}
+{Computer Networks}
+{\newline\url{https://www.coursera.org/course/comnetworks}}
+{}{}{}
+\cventry
+{\WorkDate{04}{2013}{06}{2013}}
+{The Hardware/Software Interface}
+{\newline\url{https://www.coursera.org/course/hwswinterface}}
+{}{}{}
 
 \section{\EngRus{Public Activity}{Публичная деятельность}}
-  \subsection{\EngRus{Speaking}{Конференции}}
-    \cventry
-      {\WorkSingleDate{04}{2017}}
-      {\EngRus{LLVM. Code compaction}{Преобразование по уплотнению кода в LLVM}}
-      {\EngRus{PLC-2017}{Языки программирования и компиляторы 2017}}
-      {\BirthPlaceOfValour, \EngRus{Southern Federal University}{Южный Федеральный Университет}}
-      {\newline\url{https://elibrary.ru/item.asp?id=29098144} \EngRus{[rus]}{}}
-      {}{}
+\subsection{\EngRus{Speaking}{Конференции}}
+\cventry
+{\WorkSingleDate{04}{2017}}
+{\EngRus{LLVM. Code compaction}{Преобразование по уплотнению кода в LLVM}}
+{\EngRus{PLC-2017}{Языки программирования и компиляторы 2017}}
+{\BirthPlaceOfValour, \EngRus{Southern Federal University}{Южный Федеральный Университет}}
+{\newline\url{https://elibrary.ru/item.asp?id=29098144} \EngRus{[rus]}{}}
+{}{}
 \end{document}
